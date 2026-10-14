@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff7ef">
+<meta name="description" content="Descubrí tu sorpresa para el Mes de las Madres y anotate al taller especial de rutina facial por WhatsApp.">
+<title>🍀 Tu sorpresa | Mes de las Madres</title>
+<style>
+:root{--green:#17623f;--green2:#23945b;--pink:#e96f91;--cream:#fff7ef;--gold:#d6ad48;--ink:#244b38}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:radial-gradient(ellipse at top,#fffdf9 0,#fff4e9 55%,#fce8e8 100%);overflow-x:hidden}
+body:before,body:after{content:"✿";position:fixed;font-size:clamp(100px,20vw,220px);color:#e7b6ba;opacity:.14;pointer-events:none;z-index:0}
+body:before{top:3%;left:-50px;transform:rotate(-20deg)}body:after{right:-45px;bottom:2%;transform:rotate(25deg)}
+main{position:relative;z-index:1;width:min(100% - 28px,620px);margin:0 auto;padding:28px 0 36px;text-align:center}
+.eyebrow{display:inline-block;padding:8px 15px;border:1px solid #e8d6a0;border-radius:999px;color:#7e682b;letter-spacing:.09em;text-transform:uppercase;font-size:.75rem;font-weight:750;background:#fffaf0}
+h1{font-family:Georgia,serif;font-size:clamp(2.1rem,8vw,3.4rem);line-height:1.03;margin:18px 0 8px;color:var(--green)}
+.subtitle{font-size:1.04rem;line-height:1.55;margin:0 auto 20px;max-width:420px}
+.clover-button{position:relative;display:block;margin:12px auto 12px;width:min(78vw,300px);height:min(78vw,300px);max-height:300px;border:0;background:transparent;cursor:pointer;filter:drop-shadow(0 12px 13px #315c3c35);transition:transform .25s}
+.clover-button:hover{transform:translateY(-4px) rotate(-2deg)}.clover-button:focus-visible{outline:3px solid var(--gold);outline-offset:8px;border-radius:28px}
+.leaf{position:absolute;width:47%;height:47%;background:linear-gradient(135deg,#7acb66 0%,#29954d 42%,#11613a 100%);border:3px solid #e6c65f;box-shadow:inset 4px 5px 8px #ffffff55,inset -5px -7px 10px #073f2c55; border-radius:55% 55% 48% 12%;transform-origin:bottom right}
+.leaf:after{content:"";position:absolute;left:48%;top:10%;height:80%;width:2px;background:#d7ef9c8c;transform:rotate(-28deg);border-radius:2px}
+.leaf.one{left:5%;top:9%;transform:rotate(2deg)}.leaf.two{right:5%;top:9%;transform:rotate(88deg)}.leaf.three{right:5%;bottom:9%;transform:rotate(178deg)}.leaf.four{left:5%;bottom:9%;transform:rotate(268deg)}
+.clover-stem{position:absolute;width:12%;height:31%;left:46%;top:64%;border-right:10px solid #267a3f;border-radius:0 0 70% 0;transform:rotate(18deg);z-index:-1}
+.clover-center{position:absolute;left:47%;top:47%;width:8%;height:8%;background:#fff3a0;border-radius:50%;box-shadow:0 0 18px 8px #fff2a0aa}
+.tap-hint{font-weight:800;color:#fff;background:linear-gradient(100deg,#ec7796,#dc5e83);padding:13px 20px;border-radius:14px;display:inline-block;box-shadow:0 7px 0 #bc4c70;margin:5px auto 8px;animation:pulse 1.8s infinite}
+.small{font-size:.9rem;opacity:.8;margin:7px 0 0}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+@keyframes sparkle{0%{opacity:0;transform:translateY(8px) scale(.6)}50%{opacity:1}100%{opacity:0;transform:translateY(-38px) scale(1.2)}}
+.spark{position:absolute;color:#d9aa35;font-size:28px;pointer-events:none;animation:sparkle .9s ease-out forwards}
+#surprise{display:none;margin:27px auto 0;text-align:left;background:#fffdf8;border:2px solid #dfc16c;border-radius:24px;padding:clamp(20px,5vw,34px);box-shadow:0 18px 45px #8d684322;animation:appear .6s ease both}
+#surprise.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.card-kicker{text-align:center;color:#b85e78;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:800}
+#surprise h2{text-align:center;color:var(--green);font:700 clamp(1.8rem,6vw,2.5rem)/1.1 Georgia,serif;margin:10px 0}
+.ribbon{display:table;margin:0 auto 18px;padding:8px 18px;background:#f5d4dc;border-radius:8px;color:#93465f;font-weight:800}
+#surprise p{line-height:1.65;margin:12px 0}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:20px 0}
+.benefit{background:#f8f1e6;border-radius:14px;padding:13px 7px;text-align:center;font-size:.82rem;line-height:1.35}
+.benefit span{display:block;font-size:1.55rem;margin-bottom:6px}
+.cta{display:flex;justify-content:center;align-items:center;gap:10px;width:100%;padding:16px 18px;border-radius:999px;background:linear-gradient(100deg,#20a55d,#08753e);color:#fff;text-decoration:none;font-weight:850;font-size:1.05rem;box-shadow:0 5px 0 #075b32;transition:transform .2s}
+.cta:hover{transform:translateY(-2px)}.phone{text-align:center;font-weight:800;letter-spacing:.03em;margin:17px 0 0!important}
+.note{text-align:center;color:#8b8271;font-family:Georgia,serif;font-style:italic;margin-top:16px!important}
+footer{text-align:center;font-size:.78rem;opacity:.65;margin-top:25px}
+@media(max-width:380px){.benefit{font-size:.75rem}.clover-button{width:75vw;height:75vw}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <span class="eyebrow">Una sorpresa para vos 💚</span>
+  <h1>¡La suerte puede sorprenderte!</h1>
+  <p class="subtitle">En este Mes de las Madres, hay algo especial esperando por vos.<br><strong>Tocá el trébol y descubrilo.</strong></p>
+
+  <button class="clover-button" id="clover" aria-label="Tocar el trébol para descubrir la sorpresa" aria-expanded="false" aria-controls="surprise">
+    <span class="clover-stem"></span>
+    <span class="leaf one"></span><span class="leaf two"></span><span class="leaf three"></span><span class="leaf four"></span>
+    <span class="clover-center"></span>
+  </button>
+  <div class="tap-hint">🍀 TOCÁ EL TRÉBOL 🍀</div>
+  <p class="small">Tu sorpresa está a un toque de distancia</p>
+
+  <section id="surprise" aria-live="polite">
+    <div class="card-kicker">✨ Mes de las Madres ✨</div>
+    <h2>¡Hay una sorpresa para vos!</h2>
+    <div class="ribbon">Taller especial de rutina facial</div>
+    <p>¡Estás invitada a participar por una experiencia especial para compartir!</p>
+    <p>Invitá a tu mamá, a tus amigas o a las mamás que quieras que te acompañen a disfrutar un hermoso taller de rutina facial.</p>
+    <div class="benefits">
+      <div class="benefit"><span>🌸</span><strong>Cuidar</strong><br>tu piel</div>
+      <div class="benefit"><span>💗</span><strong>Compartir</strong><br>juntas</div>
+      <div class="benefit"><span>🎁</span><strong>Vivir</strong><br>algo especial</div>
+    </div>
+    <p><strong>¿Querés anotarte?</strong> Tocá el botón y mandame un WhatsApp. Te paso la información para participar.</p>
+    <a class="cta" id="whatsapp" href="https://wa.me/5492995053620?text=Hola%21%20Quiero%20anotarme%20al%20taller%20especial%20del%20Mes%20de%20las%20Madres.%20%F0%9F%8D%80" target="_blank" rel="noopener noreferrer">☘️ QUIERO PARTICIPAR →</a>
+    <p class="phone">WhatsApp: 299 505 3620</p>
+    <p class="note">¡Te espero para compartir un momento lindo! 💚</p>
+  </section>
+  <footer>Compartí esta sorpresa con alguien especial 💐</footer>
+</main>
+<script>
+const clover = document.getElementById('clover');
+const surprise = document.getElementById('surprise');
+clover.addEventListener('click', () => {
+  surprise.classList.add('show');
+  clover.setAttribute('aria-expanded','true');
+  clover.animate([{transform:'scale(1) rotate(0deg)'},{transform:'scale(1.12) rotate(8deg)'},{transform:'scale(1) rotate(0deg)'}],{duration:550,easing:'ease-out'});
+  for(let i=0;i<12;i++){
+    const s=document.createElement('span');s.className='spark';s.textContent=['✦','✧','♥','✦'][i%4];
+    const r=clover.getBoundingClientRect();
+    s.style.left=(r.left+window.scrollX+r.width*(.15+Math.random()*.7))+'px';
+    s.style.top=(r.top+window.scrollY+r.height*(.15+Math.random()*.7))+'px';
+    document.body.appendChild(s);setTimeout(()=>s.remove(),950);
+  }
+  setTimeout(()=>surprise.scrollIntoView({behavior:'smooth',block:'start'}),180);
+});
+</script>
+</body>
+</html>
